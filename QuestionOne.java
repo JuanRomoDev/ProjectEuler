@@ -37,7 +37,7 @@ public class QuestionOne {
 		// Remove overlapping divisors shared by 3 and 5.
 		for (int i = 0; i < 1000; i += 15) {
 			if (i % 15 == 0) {
-				sum -= 15;
+				sum -= i;
 			}
 		}
 
