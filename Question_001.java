@@ -1,4 +1,4 @@
-public class QuestionOne {
+public class Question_001 {
 	public static void main(String[] args) {
 		solutionOne();
 		solutionTwo();
