@@ -10,10 +10,8 @@ public class Question_004 {
 			for (int j = 1; j < 1_000; j++) {
 				int product = i * j;
 
-				if (isPalindrome(product)) {
-					if (product > largestPalindromeProduct) {
-						largestPalindromeProduct = product;
-					}
+				if (isPalindrome(product) && product > largestPalindromeProduct) {
+					largestPalindromeProduct = product;
 				}
 			}
 		}
