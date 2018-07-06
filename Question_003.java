@@ -17,7 +17,7 @@ public class Question_003 {
 			}
 
 			// Verify that the iteration variable is prime.
-			for (int j = 2; j < (int) Math.sqrt(i); j++) {
+			for (int j = 2; j <= (int) Math.sqrt(i); j++) {
 				// If the iteration variable is not prime move to the next number.
 				if (i % j == 0) {
 					continue outer;
