@@ -1,4 +1,10 @@
 public class Question_002 {
+
+	static final int F1 = 1;
+	static final int F2 = 2;
+
+	static final int LIMIT = 4_000_000;
+
 	public static void main(String[] args) {
 		solutionOne();
 	}
@@ -6,14 +12,12 @@ public class Question_002 {
 	static void solutionOne() {
 		long sum = 0;
 
-		int F1 = 1;
-		int F2 = 2;
-
 		int secondLastFibo = F1;
 		int lastFibo = F2;
 
 		int result;
 		
+		// Calculate Fibonacci numbers iteratively.
 		for (int i = 1; ; i++) {
 			switch (i) {
 				case 1:
@@ -31,7 +35,7 @@ public class Question_002 {
 					lastFibo = result;
 			}
 
-			if (result > 4_000_000) {
+			if (result > LIMIT) {
 				break;
 			}
 
